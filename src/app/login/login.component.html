@@ -1,0 +1,121 @@
+<header class="page-title pt-small pt-dark">
+  <div class="container">
+    <div class="row">
+      <h1 class="col-sm-6">Login Page</h1>
+      <ol class="col-sm-6 text-right breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Elements</a></li>
+        <li class="active">login</li>
+      </ol>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- ========== Login From ========== -->
+
+<div class="login-1">
+  <div class="bg-overlay">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          
+          <!-- Log in -->
+          <div class="panel-group" id="login-accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel top-panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#login-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Login to your account
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+
+                  <div class="form-login">
+                    <form action="post">
+                      <!-- Username -->
+                      <div class="form-group">
+                        <input type="text" id="username-login-1" class="form-control" placeholder="Enter your name">
+                        <label for="username-login-1">Username</label>
+                      </div>
+                      <!-- Password -->
+                      <div class="form-group">
+                        <input type="password" id="pass-login-1" class="form-control" placeholder="Enter your password">
+                        <label for="pass-login-1">Password</label>
+                        <span class="pull-right"><a href="#" class="forget-pass-link">Forget password?</a></span>
+                      </div>
+                      <!-- Submit -->
+                      <input type="submit" value="Login" class="btn">
+                    </form>
+                  </div><!-- / .form-wrapper -->
+
+                </div><!-- / .panel-body -->
+              </div><!-- / .panel-collapse -->
+            </div><!-- / .panel -->
+            
+            <!-- Register Account -->
+            <div class="panel bottom-panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#login-accordion" href="#register-login-page-2" aria-expanded="false" aria-controls="register-login-page-2">
+                    Register account
+                  </a>
+                </h4>
+              </div>
+              <div id="register-login-page-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+
+                  <div class="form-register">
+                    <form action="post">
+                      <!-- First Name -->
+                      <div class="form-group col-md-6 no-gap-left">
+                        <input type="text" id="name-login-1" class="form-control" placeholder="First Name">
+                        <label for="name-login-1">First Name</label>
+                      </div>
+                      <!-- Last name -->
+                      <div class="form-group col-md-6 no-gap-right">
+                        <input type="text" id="lastname-signup-1" class="form-control" placeholder="Last Name">
+                        <label for="last-name-signup-1">Last Name</label>
+                      </div>
+                      <!-- Email -->
+                      <div class="form-group">
+                        <input type="email" id="email-signup-1" class="form-control" placeholder="Enter your email">
+                        <label for="email-signup-1">Email</label>
+                      </div>
+                      <!-- Password -->
+                      <div class="form-group">
+                        <input type="password" id="pass-signup-1" class="form-control" placeholder="Enter a password">
+                        <label for="pass-signup-1">Password</label>
+                      </div>
+                      <!-- Re-Enter Password -->
+                      <div class="form-group">
+                        <input type="password" id="re-pass-signup-1" class="form-control" placeholder="Re-enter your password">
+                        <label for="re-pass-signup-1">Re-enter password</label>
+                      </div>
+                      <!-- Newsletter check -->
+                      <div class="form-group">
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id="newsletter-check" value="option1" checked> Subscribe to our newsletter
+                        </label>
+                      </div>
+                      <!-- Submit -->
+                      <input type="submit" value="Register" class="btn">
+                    </form>
+                  </div><!-- / .form-wrapper -->
+
+                </div><!-- / .panel-body -->
+              </div><!-- / #register-login-page-2 .panel-colapse -->
+            </div><!-- / .panel -->
+          </div><!-- / #login-accordion .panel-group -->
+
+
+        </div><!-- / .col-md-6 -->
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+
+  </div><!-- / .bg-overlay -->
+</div><!-- / .bg-login -->
