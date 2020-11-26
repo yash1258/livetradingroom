@@ -25,14 +25,15 @@
       <li><a href="#contact">Contact Us<span class="sr-only"></span></a></li>
       <li>
         <a
-        routerLink='/login-component' 
-        routerLinkActive='active'
-          href="/src/app/login/login.component.html">
+        
+          >
            <span>
              <i 
              style="color:black; font-size: large;"
               class="fa fa-user-circle-o" 
-              aria-hidden="true">
+              aria-hidden="true"
+              [routerLink]="['/login']"
+              >
             </i>
           </span> 
           Login

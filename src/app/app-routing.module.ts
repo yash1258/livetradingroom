@@ -5,13 +5,10 @@ import {NavbarComponent} from './navbar/navbar.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 
 
-const routes: Routes = [
-  {
-    path: 'navbar-component', component: NavbarComponent
-  },
-  {
-    path: 'login-component', component: LoginComponent
-  }
+const routes: Routes = [{path:'',component:DashboardComponent},{
+  path:'login',
+  component:LoginComponent
+}
 ];
 
 @NgModule({
