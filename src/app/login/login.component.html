@@ -1,16 +1,3 @@
-<!-- <header class="page-title pt-small pt-dark"> -->
-<!--   <div class="container"> -->
-<!--     <div class="row"> -->
-<!--       <h1 class="col-sm-6">Login Page</h1> -->
-<!--       <!-1- <ol class="col-sm-6 text-right breadcrumb"> -1-> -->
-<!--       <!-1-   <li><a href="#">Home</a></li> -1-> -->
-<!--       <!-1-   <li><a href="#">Elements</a></li> -1-> -->
-<!--       <!-1-   <li class="active">login</li> -1-> -->
-<!--       <!-1- </ol> -1-> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </header> -->
-
 <!-- ========== Login From ========== -->
 
 <div class="login-1">
@@ -48,35 +35,64 @@
               >
                 <div class="panel-body">
                   <div class="form-login">
-                    <form action="post">
+                    <form
+                      #loginForm="ngForm"
+                      (ngSubmit)="onLoginFormSubmit(loginForm)"
+                    >
                       <!-- Username -->
                       <div class="form-group">
                         <input
-                          type="text"
+                          type="email"
                           id="username-login-1"
+                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                           class="form-control"
-                          placeholder="Enter your name"
+                          placeholder="Enter your email"
+                          name="email"
+                          ngModel
+                          #loginEmailModel="ngModel"
+                          required
                         />
                         <label for="username-login-1">Username</label>
+                        <div *ngIf="loginEmailModel.dirty" class="text-danger">
+                          <p *ngIf="loginEmailModel.invalid">
+                            Please Enter correct Email
+                          </p>
+                        </div>
                       </div>
                       <!-- Password -->
                       <div class="form-group">
                         <input
                           type="password"
+                          name="password"
+                          minlength="6"
                           id="pass-login-1"
                           class="form-control"
-                          placeholder="Enter your password"
+                          placeholder="enter your password"
+                          ngModel
+                          #loginpasswordmodel="ngModel"
+                          required
                         />
-                        <label for="pass-login-1">Password</label>
+                        <label for="pass-login-1">password</label>
                         <span class="pull-right"
-                          ><a href="#" class="forget-pass-link"
-                            >Forget password?</a
+                          ><a class="forget-pass-link"
+                            >forget password?</a
                           ></span
                         >
+                        <div *ngIf="loginpasswordmodel.dirty" class="text-danger">
+                          <p *ngIf="loginpasswordmodel.invalid">
+                            Please Enter correct Password
+                          </p>
+                        </div>
                       </div>
                       <!-- Submit -->
-                      <input type="submit" value="Login" class="btn" />
+                      <button
+                        [ngClass]="loginForm.valid ? 'btn' : 'btn btn-light'"
+                        type="submit"
+                      >
+                        Login
+                      </button>
                     </form>
+                    <pre>{{ loginForm.value | json }}</pre>
                   </div>
                   <!-- / .form-wrapper -->
                 </div>
@@ -119,6 +135,8 @@
                       <div class="form-group col-md-6 no-gap-left">
                         <input
                           type="text"
+                          maxlength="10"
+                          minlength="3"
                           class="form-control"
                           name="firstName"
                           placeholder="First Name"
@@ -130,6 +148,8 @@
                       <div class="form-group col-md-6 no-gap-right">
                         <input
                           type="text"
+                          maxlength="10"
+                          minlength="3"
                           id="lastname-signup-1"
                           name="lastName"
                           [(ngModel)]="registerFormModel.lastName"
@@ -141,31 +161,81 @@
                       <!-- Email -->
                       <div class="form-group">
                         <input
-                          type="email"
+                          [type]="'email'"
                           id="email-signup-1"
                           class="form-control"
+                          required
+                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                           name="email"
                           [(ngModel)]="registerFormModel.email"
+                          #emailModel="ngModel"
                           placeholder="Enter your email"
                         />
                         <label for="email-signup-1">Email</label>
+                        <div *ngIf="emailModel.touched">
+                          <p *ngIf="emailModel.errors" class="text-danger">
+                            Please Enter Valid Email
+                          </p>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="number"
+                          id="phoneNumber"
+                          class="form-control"
+                          name="phoneNumber"
+                          [(ngModel)]="registerFormModel.phoneNumber"
+                          #phoneNumberModel="ngModel"
+                          placeholder="Enter your mobileNumber"
+                          pattern="^\d{10}$"
+                          required
+                        />
+                        <label for="phoneNumber">Phone Number</label>
+                        <p
+                          *ngIf="phoneNumberModel.errors?.pattern"
+                          class="text-danger"
+                        >
+                          Phone Number must be 10 digits
+                        </p>
+                        <p
+                          *ngIf="
+                            phoneNumberModel.dirty &&
+                            phoneNumberModel.errors?.required
+                          "
+                          class="text-danger"
+                        >
+                          Phone number is required
+                        </p>
                       </div>
                       <!-- Password -->
                       <div class="form-group">
                         <input
                           type="password"
                           id="pass-signup-1"
+                          class="form-control"
                           name="password"
                           [(ngModel)]="registerFormModel.password"
-                          class="form-control"
+                          #passwordmodel="ngModel"
                           placeholder="Enter a password"
+                          minlength="6"
+                          required
                         />
                         <label for="pass-signup-1">Password</label>
+                        <div
+                          *ngIf="
+                            passwordmodel.errors &&
+                            (passwordmodel.dirty || passwordmodel.touched)
+                          "
+                        >
+                          <p class="text-danger">Password is required</p>
+                        </div>
                       </div>
+
                       <!-- Re-Enter Password -->
                       <div class="form-group">
                         <input
                           type="password"
+                          minlength="6"
                           id="re-pass-signup-1"
                           class="form-control"
                           ngValidateEqual="password"
@@ -175,25 +245,25 @@
                           [(ngModel)]="registerFormModel.passwordC"
                         />
                         <label for="re-pass-signup-1">Re-enter password</label>
-                      </div>
-                        <div *ngIf="modelConfirmPassword.invalid">
-                          <p>NORT EQUIALLLL</p>
+                        <div
+                          *ngIf="
+                            (modelConfirmPassword.dirty ||
+                              modelConfirmPassword.touched) &&
+                            modelConfirmPassword.invalid
+                          "
+                        >
+                          <p class="text-danger">Passwords dont match</p>
                         </div>
-                      <!-- Newsletter check -->
-                      <div class="form-group">
-                        <label class="checkbox-inline">
-                          <input
-                            type="checkbox"
-                            id="newsletter-check"
-                            value="option1"
-                            checked
-                          />
-                          Subscribe to our newsletter
-                        </label>
                       </div>
                       <!-- Submit -->
-                      <input type="submit" value="Register" class="btn" />
+                      <button
+                        [ngClass]="registerForm.valid ? 'btn' : 'btn btn-light'"
+                        type="submit"
+                      >
+                        Register
+                      </button>
                     </form>
+                    <h3>{{ this.registrationResult }}</h3>
                   </div>
                   <!-- / .form-wrapper -->
                 </div>
