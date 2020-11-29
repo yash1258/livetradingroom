@@ -1,6 +1,6 @@
-/* 
 _____________________________________________________
 
+/* 
 	Definity - Multipurpose One/Multi Page Template
 	Version: 1.6 (update - 08.09.16)
 	Created By: Viktor Andonov
@@ -195,6 +195,11 @@ _____________________________________________________
 /* --------------------------------------------------
 	0.2 Utility
 -------------------------------------------------- */
+
+.hashtag-color{
+  background:#27afe3;
+}
+
 hr {
   margin-top: 0;
   margin-bottom: 0;
@@ -5056,7 +5061,7 @@ blockquote footer cite,
   position: relative;
   display: inline-block;
   padding: 8px 38px;
-  background: #111;
+  background: #27afe3;
   color: #ececec;
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica,
     sans-serif;
@@ -5084,7 +5089,7 @@ blockquote footer cite,
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited,
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
   color: #ececec;
-  background: #111;
+  background: #27afe3;
 }
 
 .btn:visited:hover,
@@ -5112,7 +5117,7 @@ blockquote footer cite,
   .cart-btns
   .btn-light:visited:hover {
   color: #ececec;
-  background: #3f3f3f;
+  background: #015e9b;
 }
 
 .btn:hover,
@@ -5125,7 +5130,7 @@ blockquote footer cite,
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:hover,
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:hover {
   color: #ececec;
-  background: #3f3f3f;
+  background: #015e9b;
 }
 
 .btn:focus,
@@ -5157,7 +5162,7 @@ blockquote footer cite,
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:after {
   content: "";
   position: absolute;
-  background: #111;
+  background: #27afe3;
   left: 0;
   top: 100%;
   width: 100%;
@@ -7063,7 +7068,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .navbar-trans .navbar-logo-dark {
-  content: url(../images/logo.png);
+  content: url(../images/logo-PNG-2.png);
 }
 
 .navbar-trans:not(.navbar-inverse) .navbar-nav li a:focus,
@@ -31033,7 +31038,7 @@ form .input-error-2:focus {
 .web-app-hero .hero-content-wrapper .hero-content .hero-subheading {
   margin-top: 100px;
   margin-bottom: 20px;
-  color: #999;
+  color: #4d4d4d;
 }
 
 /* ---- 20.2 Full Screen Slider ---- */
@@ -42503,3 +42508,4 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
