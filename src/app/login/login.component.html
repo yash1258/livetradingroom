@@ -78,7 +78,10 @@
                             >forget password?</a
                           ></span
                         >
-                        <div *ngIf="loginpasswordmodel.dirty" class="text-danger">
+                        <div
+                          *ngIf="loginpasswordmodel.dirty"
+                          class="text-danger"
+                        >
                           <p *ngIf="loginpasswordmodel.invalid">
                             Please Enter correct Password
                           </p>
@@ -91,8 +94,8 @@
                       >
                         Login
                       </button>
+                        <p>{{loginFormResult}}</p>
                     </form>
-                    <pre>{{ loginForm.value | json }}</pre>
                   </div>
                   <!-- / .form-wrapper -->
                 </div>

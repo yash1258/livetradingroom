@@ -23,8 +23,13 @@ export class LoginComponent implements OnInit {
   registerFormModel = new RegisterForm();
   destroyer$ = new Subject<boolean>();
   registrationResult: string;
+  loginFormResult: string;
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService) {
+    authService.loginFormMessage.subscribe((res) => {
+      this.loginFormResult = res;
+    });
+  }
 
   ngOnInit(): void {
     this.destroyer$.next(false);

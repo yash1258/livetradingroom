@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ValidateEqualModule } from 'ng-validate-equal';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ValidateEqualModule } from 'ng-validate-equal';
     DashboardComponent,
     LoginComponent,
     NavbarComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { add, isBefore, parseJSON } from 'date-fns';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthService {
   token: string;
+  loginFormMessage = new BehaviorSubject<string>('');
   constructor(private _http: HttpClient, private router: Router) {}
   login(email: string, password: string): void {
     this._http
@@ -25,11 +26,13 @@ export class AuthService {
           this.token = res['id_token'];
           this.setSession(res['id_token'], res['expires_at']);
           // this.router.navigateByUrl('/');
-          window.location.href = '/';
+          console.log(res);
+          // location.assign('/');
+          // location.reload();
         },
-        (err) => {
-          console.log(err);
-          this.router.navigate(['/']);
+        ({ error }) => {
+          console.log(error);
+          this.loginFormMessage.next(error.message);
         }
       );
   }
