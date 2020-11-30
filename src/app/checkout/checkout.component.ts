@@ -46,9 +46,15 @@ export class CheckoutComponent implements OnInit {
     };
     options.handler = (response, error) => {
       options.response = response;
-      console.log(response);
       const params = new HttpParams({ fromObject: response });
-      this.paymentService.verifyOrder(params);
+      this.paymentService.verifyOrder(params).subscribe(
+        (res) => {
+          console.log(res);
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
     };
     options.modal.ondismiss = () => {
       console.log('Transaction cancelled.');

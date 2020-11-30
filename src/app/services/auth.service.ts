@@ -12,6 +12,7 @@ export class AuthService {
   token: string;
   loginFormMessage = new BehaviorSubject<string>('');
   constructor(private _http: HttpClient, private router: Router) {}
+
   login(email: string, password: string): void {
     this._http
       .post<{ id_token: string; expires_at: number }>(
@@ -25,10 +26,7 @@ export class AuthService {
         (res) => {
           this.token = res['id_token'];
           this.setSession(res['id_token'], res['expires_at']);
-          // this.router.navigateByUrl('/');
-          console.log(res);
-          // location.assign('/');
-          // location.reload();
+          location.href = '/';
         },
         ({ error }) => {
           console.log(error);
@@ -53,7 +51,7 @@ export class AuthService {
     this.router.navigate(['/pages/login']);
   }
 
-  getToken(): string {
+  get getToken(): string {
     return this.token;
   }
 
@@ -64,11 +62,11 @@ export class AuthService {
         return true;
       } else {
         this.logout();
-        this.router.navigate(['/pages/login']);
+        // this.router.navigate(['/login']);
         return false;
       }
     } else {
-      this.router.navigate(['/pages/login']);
+      // this.router.navigate(['/login']);
       return false;
     }
   }

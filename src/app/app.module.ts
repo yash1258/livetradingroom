@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ValidateEqualModule } from 'ng-validate-equal';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { httpInterceptor } from './interceptors/httpinterceptor.interceptor';
+import { ModalModule } from 'angular-custom-modal';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,12 @@ import { CheckoutComponent } from './checkout/checkout.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ModalModule,
     ValidateEqualModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: httpInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

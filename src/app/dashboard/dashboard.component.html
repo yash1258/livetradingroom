@@ -197,7 +197,9 @@
             </ul>
             <hr />
 
-            <button class="btn-ghost">Book Ticket</button>
+            <button (click)="checkoutModal.open()" class="btn-ghost">
+              Book Ticket
+            </button>
           </div>
           <!-- / .p-table -->
         </div>
@@ -711,3 +713,9 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/contact-form/ajax-cf-1.js"></script>
 </div>
+
+<modal #checkoutModal>
+  <ng-template #modalHeader></ng-template>
+  <ng-template #modalBody><app-checkout></app-checkout></ng-template>
+  <ng-template><h2>Header</h2></ng-template>
+</modal>
