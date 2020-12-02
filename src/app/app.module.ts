@@ -11,6 +11,7 @@ import { ValidateEqualModule } from 'ng-validate-equal';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { httpInterceptor } from './interceptors/httpinterceptor.interceptor';
 import { ModalModule } from 'angular-custom-modal';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ModalModule } from 'angular-custom-modal';
     LoginComponent,
     NavbarComponent,
     CheckoutComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

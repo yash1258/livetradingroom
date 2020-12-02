@@ -22,7 +22,10 @@ export class NavbarComponent implements OnInit {
 
   navigate(): void {
     this._router.navigate(['/login']);
+    
   }
+
+  
 
   logout(): void {
     this._auth.logout();

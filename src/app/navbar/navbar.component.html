@@ -42,7 +42,19 @@
       <li>
         <a href="#contact">Contact Us<span class="sr-only"></span></a>
       </li>
-      <li *ngIf="isLoggedIn">
+      <li 
+      style="cursor: pointer"
+      >
+        <a  >
+        Profile
+        <span 
+        class="sr-only">
+      </span>
+    </a>
+  </li>
+      <li 
+      style="cursor: pointer;"
+      *ngIf="isLoggedIn">
         <a (click)="logout()">
           <span
             ><i
@@ -55,7 +67,9 @@
           <span class="sr-only"> </span
         ></a>
       </li>
-      <li *ngIf="!isLoggedIn">
+      <li
+      style="cursor: pointer;"
+      *ngIf="!isLoggedIn">
         <a (click)="navigate()">
           <span
             ><i
