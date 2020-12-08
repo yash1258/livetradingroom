@@ -1498,18 +1498,18 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 }
 
 .btn:visited, .btn-ghost:visited, .btn-ghost-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited, .btn-text:visited, .btn-text-light:visited, .btn-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
-  color: #ececec;
-  background: #111;
+  
+  background: #27afe3;
 }
 
 .btn:visited:hover, .btn-ghost:visited:hover, .btn-ghost-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited:hover, .btn-text:visited:hover, .btn-text-light:visited:hover, .btn-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited:hover {
   color: #ececec;
-  background: #3f3f3f;
+  background: #27afe3;
 }
 
 .btn:hover, .btn-ghost:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover, .btn-text:hover, .btn-text-light:hover, .btn-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:hover {
   color: #ececec;
-  background: #3f3f3f;
+  background: #27afe3;
 }
 
 .btn:focus, .btn-ghost:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus, .btn-text:focus, .btn-text-light:focus, .btn-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:focus {
@@ -1529,7 +1529,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost:after, .btn-ghost-light:after, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:after {
   content: '';
   position: absolute;
-  background: #111;
+  background: #27afe3;
   left: 0;
   top: 100%;
   width: 100%;
@@ -1543,17 +1543,17 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost-light:visited,
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited,
 .btn-ghost:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus {
-  color: #111;
+  color: #27afe3;
   text-decoration: none;
 }
 
 .btn-ghost:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover {
-  color: #ececec;
+  color: #fff;
   background: none;
 }
 
 .btn-ghost:hover:visited, .btn-ghost-light:hover:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover:visited {
-  color: #ececec;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1562,8 +1562,8 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 }
 
 input[class="btn-ghost"]:hover {
-  color: #ececec;
-  background: #111;
+  color: #fff;
+  background: #27afe3;
 }
 
 input[class="btn-ghost"]:after {
@@ -2411,7 +2411,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 /* ---- 7.2 Footer Contact ---- */
-.footer-contact .contact-info {
+.footer-contact .contact-info  {
   position: relative;
 }
 
@@ -6369,7 +6369,8 @@ fieldset[disabled] .form-control:hover {
 -------------------------------------------------- */
 /* ---- 17.1 CTA - Link ---- */
 .cta-link {
-  background: url(../../assets/images/test/dark-low-poly-background_1048-7971.jpg) repeat;
+  /* background: url(../../assets/images/test/gray-background.png) ; */
+  
 }
 
 .cta-link .bg-overlay {
@@ -6405,7 +6406,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .cta-1{
-  /* background: url(../images/test/dark-low-poly-background_1048-7971.jpg) */
+  background: url(../images/test/dark-low-poly-background_1048-7971.jpg)
 }
 
 .cta-link .cta-wrapper h3, .cta-link .cta-wrapper .page-title .subheading, .page-title .cta-link .cta-wrapper .subheading {
@@ -6417,7 +6418,7 @@ fieldset[disabled] .form-control:hover {
 
 /* ---- 17.2 CTA - Newsletter Signup ---- */
 .cta-newsletter {
-  /* background: url(../../assets/images/shattered.gif) repeat; */
+  background: url(../../assets/images/shattered.gif) repeat;
   background-color:#27afe3;
 
 }
@@ -10357,4 +10358,35 @@ form .input-error-2:focus {
 }
 button.btn-ghost-light.btn{
   margin: 0px 5px 30px 5px;
+}
+
+
+/* hashtag gradiend */
+
+.hashtag-color{
+  background-image: linear-gradient(to right, #015e9b, #27afe3);
+}
+
+.hashtah-color:visited:hover{
+  background: #27afe3;
+}
+
+
+
+.live-grad {
+  
+   background: -webkit-linear-gradient(left, #015e9b , #27afe3);
+   background: -o-linear-gradient(right, #015e9b, #27afe3);
+   background: -moz-linear-gradient(right, #015e9b, #27afe3);
+   background: linear-gradient(to right, #015e9b , #27afe3); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#contact-form{
+  padding-top: 50px;
+}
+
+#contact{
+  padding-top: 20px;
 }

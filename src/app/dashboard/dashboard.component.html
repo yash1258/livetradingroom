@@ -16,23 +16,24 @@
       <div class="hero-content-wrapper">
         <div class="hero-content">
           <h1 class="hero-lead wow fadeInLeft" data-wow-duration="1s">
-            Live<br />
+            <span class="live-grad" style="color: linear-gradient(to right, #015e9b, #27afe3);" >Live</span>
+            <br />
             Trading <br />
             Room
           </h1>
-          <h4
+          <!-- <h4
             class="h-alt hero-subheading wow fadeIn"
             data-wow-duration="1.5s"
             data-wow-delay=".7s"
           >
             India's Premier &amp; Live Trading Room
-          </h4>
-          <a
+          </h4> -->
+          <a 
             href="#welcome"
             class="btn wow fadeIn hashtag-color"
             data-wow-duration="1.5s"
             data-wow-delay="1s"
-            >#HighRollersClub</a
+            >India's Premier &amp; Live Trading Room</a
           >
         </div>
       </div>
@@ -143,88 +144,136 @@
 
   <!-- ========== Pricing Tables - 3col ========== -->
 
+  
   <div id="pricing" class="gray-bg">
-    
-    <section class="container section pricing-tables dark-index-padding">
-      <div class="container">
+    <section class="container section pricing-tables">
+      
       <header class="sec-heading">
-        <h2 class="dark-index">Dark Index</h2>
-        <!-- <span class="subheading">Low prices lots of value </span> -->
+        <h2>Our Prices</h2>
+        <span class="subheading">Low prices lots of value </span>
       </header>
 
       <div class="row">
+        
         <!-- Table 1 -->
+        <div class="col-md-4">
+          <div class="p-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+
+            <!-- Heading -->
+            <h4>Starter</h4>
+            <div class="price">
+              <span class="currency">₹</span>
+              <span class="value">11</span>
+              <span class="type">\mo</span>
+            </div>
+            <p class="desc">BankNifty Monthly / Weekly Options</p>
+            <hr>
+
+            <!-- Items -->
+            <ul class="p-items">
+              <li><b>Valid for 20 Trading Days</b></li>
+              <li><b>#DarkIndex</b></li>
+              <!-- <li><b>Full</b> Access</li>
+              <li><b>1 Year</b> Licence</li>
+              <li><b>Free</b> Support</li> -->
+            </ul>
+             <hr>
+
+            <button (click)="checkoutModal.open()" class="btn-ghost">Sign up now</button>
+          </div><!-- / .p-table -->
+        </div><!-- / .col-md-4 -->
+        
 
         <!-- Table 2 (featured) -->
-        <div class="d-flex justify-content-center">
+        <div class="col-md-4">
           <div class="p-table pt-featured wow fadeInUp" data-wow-duration="1s">
+
             <!-- Star -->
             <div class="banner">
               <span class="star"><i class="fa fa-star"></i></span>
             </div>
-
+            
             <!-- Header -->
-            <h4>Prime Membership</h4>
+            <h4>Professional</h4>
             <div class="price">
               <span class="currency">₹</span>
-              <span class="value">14,999</span>
-              <span class="type"></span>
+              <span class="value">51</span>
+              <span class="type">\mo</span>
             </div>
             <p class="desc">BankNifty Monthly / Weekly Options</p>
-            <hr />
+            <hr>
 
             <!-- Items -->
             <ul class="p-items">
-              <li>
-                <b> Valid for 20 Trading Days </b>
-              </li>
+              <li><b>Valid for 20 Trading Days</b></li>
               <li><b>#DarkIndex</b></li>
               <!-- <li><b>Full</b> Access</li>
-                  <li><b>2 Year</b> Licence</li>
-                  <li><b>Free</b> Support</li> -->
+              <li><b>2 Year</b> Licence</li>
+              <li><b>Free</b> Support</li> -->
             </ul>
-            <hr />
+             <hr>
 
-            <button (click)="checkoutModal.open()" class="btn-ghost">
-              Book Ticket
-            </button>
-          </div>
-          <!-- / .p-table -->
-        </div>
-        <!-- / .col-md-4 -->
+            <button (click)="checkoutModal.open()" class="btn-ghost">Sign up now</button>
+          </div><!-- / .p-table -->
+        </div><!-- / .col-md-4 -->
+
 
         <!-- Table 3 -->
-      </div>
-    </div>
-      <!-- / .row -->
-    </section>
+        <div class="col-md-4">
+          <div class="p-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+
+            <!-- Header -->
+            <h4>Ultimate</h4>
+            <div class="price">
+              <span class="currency">₹</span>
+              <span class="value">71</span>
+              <span class="type">\mo</span>
+            </div>
+            <p class="desc">BankNifty Monthly / Weekly Options</p>
+            <hr>
+
+            <!-- Items -->
+            <ul class="p-items">
+              <li><b>Valid for 20 Trading Days</b></li>
+              <li><b>#DarkIndex</b></li>
+              <!-- <li><b>Full</b> Access</li>
+              <li><b>4 Year</b> Licence</li>
+              <li><b>Free</b> Support</li> -->
+            </ul>
+             <hr>
+
+            <button (click)="checkoutModal.open()" class="btn-ghost">Sign up now</button>
+          </div><!-- / .p-table -->
+        </div><!-- / .col-md-4 -->
+
+      </div><!-- / .row -->
+    </section><!-- / .container -->
     <!-- / .container -->
-    <div class="row">
-      <header class="sec-heading inclusion">
-        <h2>Inclusion</h2>
-        <span class="subheading">
-          <p class="paragraph">
-            Link Shared on GotoMeeting - 9:10 AM / 3:30 PM on Broadcast Group -
-            Whatsapp / Telegram <br />
+  <div class="row">
+    <header class="sec-heading inclusion">
+      <h2>Inclusion</h2>
+      <span class="subheading">
+        <p class="paragraph">
+          Link Shared on GotoMeeting - 9:10 AM / 3:30 PM on Broadcast Group -
+          Whatsapp / Telegram <br />
 
-            #DarkIndex #Intraday #Positional Module - Trading Symbol
-            #BankNiftyFut #Monthly #Weekly #Options <br />
+          #DarkIndex #Intraday #Positional Module - Trading Symbol
+          #BankNiftyFut #Monthly #Weekly #Options <br />
 
-            One can trade minimum one lot & there is no limit on upside <br />
+          One can trade minimum one lot & there is no limit on upside <br />
 
-            Before you sign-up, pls read the FAQ's. <br />
+          Before you sign-up, pls read the FAQ's. <br />
 
-            We have a ZERO Refund Policy
-          </p>
-        </span>
-      </header>
-    </div>
+          We have a ZERO Refund Policy
+        </p>
+      </span>
+    </header>
   </div>
-  <!-- / .gray-bg -->
+  </div><!-- / .gray-bg -->
 
   <!-- ========== CTA - Contact Link ========== -->
 
-  <div class="cta-link">
+  <div id="vision" class="cta-link">
     <div class="bg-overlay">
       <div class="cta-wrapper">
         <h3
@@ -250,7 +299,7 @@
 
   <!-- ========== Featured Projects ========== -->
   <!-- ========== Branding Identity ========== -->
-
+<section id="who-we-are" >
   <div id="portfolio" class="container-fluid ft-hover-item">
     <div class="row">
       <!-- Item 1 -->
@@ -294,7 +343,7 @@
     <!-- / .row -->
   </div>
   <!-- / .container-fluid -->
-
+</section>
   <!-- ========== Webinar ========== -->
 
   <div class="cta-link">
@@ -408,10 +457,10 @@
 
   <!-- ========== CTA - Newsletter Signup ========== -->
 
-  <section class="success-stories">
+  <section  class="success-stories">
     <h2 class="font_2" style="line-height:1.1em;text-align:center;font-size:38px;margin: 5rem 0px;">
       <span class="color_15">
-        <span style="color:#fff" >SUCCESS STORIES</span>
+        <span  >SUCCESS STORIES</span>
       </span>
     </h2>
     <div class="success-1">
@@ -479,6 +528,66 @@
   <!-- ========== Shop Layout - (Top Rated Product) ========== -->
 
   <!-- ========== Contact ========== -->
+
+  <section id="contact" class="section contact-1">
+          
+    <header class="sec-heading">
+      <h2>Countact Us</h2>
+      <span class="subheading">We love to hear from you</span>
+    </header>
+    
+    <div class="contact-wrapper">
+      <!-- Map -->
+      
+
+      <!-- Show Info Button -->
+      
+
+      <div class="container">
+
+        
+        <!-- Contact Form -->
+        <div class="row">
+          <form action="assets/contact-form/contact-form.php" method="POST" id="contact-form-1" class="form-ajax">
+            <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s">
+
+              <!-- Name -->
+              <div class="form-group">
+                <input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your name">
+                <label for="name-contact-1">Name</label>
+                <span class="pull-right alert-error"></span>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email">
+                <label for="email-contact-1">Email</label>
+                <span class="pull-right alert-error"></span>
+              </div>
+
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-duration="1s">
+
+              <!-- Message -->
+              <div class="form-group">
+                <textarea name="message" id="message-contact-1" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                <label for="message-contact-1">Message</label>
+              </div>
+              <div>
+                <input type="submit" class="btn pull-right" value="Send Message">
+              </div>
+
+              <!-- Ajax Message -->
+              <div class="ajax-message col-md-12 no-gap"></div>
+
+            </div><!-- / .col-md-4 -->
+
+          </form>
+        </div><!-- / .row -->
+      </div><!-- / .container -->
+    </div><!-- / .contact-wrapper -->
+  </section><!-- / .contact-1 -->
 
   <!-- ========== Footer ========== -->
 

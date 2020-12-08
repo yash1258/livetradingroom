@@ -379,7 +379,9 @@
    padding-bottom: 0px; 
 }
 .btn {
-  padding: 8px 30px;
+  padding: 8px 15px;
+  font-size: 10px;
+  width: fit-content;
 }
 
 .success-1,.success-2,.success-3,.success-4 {
@@ -857,7 +859,7 @@
   .fs-video-hero .hero-content-wrapper .hero-content,
   .fw-video-hero .hero-content-wrapper .hero-content,
   .freelancer-hero .hero-content-wrapper .hero-content {
-    padding-left: 35px;
+    padding-left: 15px;
     padding-right: 35px;
   }
   .main-demo-hero .hero-content-wrapper .hero-content .hero-lead,
