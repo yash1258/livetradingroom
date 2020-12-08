@@ -1485,7 +1485,8 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
   position: relative;
   display: inline-block;
   padding: 8px 38px;
-  background: #111;
+  /* background: #111; */
+  background-image: linear-gradient(to right, #015e9b, #27afe3);
   color: #ececec;
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;

@@ -60,7 +60,7 @@
       <li>
         <a href="#contact">Contact Us<span class="sr-only"></span></a>
       </li>
-      <li *ngIf="isLoggedIn">
+      <li class="login-btn" *ngIf="isLoggedIn">
         <a (click)="logout()">
           <span
             ><i
@@ -73,7 +73,7 @@
           <span class="sr-only"> </span
         ></a>
       </li>
-      <li *ngIf="!isLoggedIn">
+      <li class="login-btn" *ngIf="!isLoggedIn">
         <a (click)="navigate()">
           <span
             ><i
