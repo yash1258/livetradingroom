@@ -12,6 +12,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { httpInterceptor } from './interceptors/httpinterceptor.interceptor';
 import { ModalModule } from 'angular-custom-modal';
 import { ParticlesDirective } from './shared/directive/particle.directive';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ParticlesDirective } from './shared/directive/particle.directive';
     NavbarComponent,
     CheckoutComponent,
     ParticlesDirective,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
