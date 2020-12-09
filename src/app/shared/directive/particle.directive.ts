@@ -67,8 +67,9 @@ export class ParticlesDirective implements OnDestroy, OnInit {
     this.initVariables();
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.animate();
+    this.setCanvasSize();
   }
 
   @HostListener('window:resize') onResize() {
