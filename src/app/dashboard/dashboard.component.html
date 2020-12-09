@@ -16,23 +16,24 @@
       <div class="hero-content-wrapper">
         <div class="hero-content">
           <h1 class="hero-lead wow fadeInLeft" data-wow-duration="1s">
-            Live<br />
+            <span class="live-grad" style="color: linear-gradient(to right, #015e9b, #27afe3);" >Live</span>
+            <br />
             Trading <br />
             Room
           </h1>
-          <h4
+          <!-- <h4
             class="h-alt hero-subheading wow fadeIn"
             data-wow-duration="1.5s"
             data-wow-delay=".7s"
           >
             India's Premier &amp; Live Trading Room
-          </h4>
-          <a
+          </h4> -->
+          <a 
             href="#welcome"
             class="btn wow fadeIn hashtag-color"
             data-wow-duration="1.5s"
             data-wow-delay="1s"
-            >#HighRollersClub</a
+            >India's Premier &amp; Live Trading Room</a
           >
         </div>
       </div>
@@ -111,131 +112,168 @@
   <div class="number-counters">
     <div class="container">
       <div id="counters" class="row count-wrapper">
+        
         <!-- Item 1 -->
-        <div
-          class="col-md-3 count-item wow fadeIn"
-          data-wow-duration="0.5s"
-          data-wow-delay=".3s"
-        >
+        <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="0.5s" data-wow-delay=".3s">
           <span id="count-1" class="count-nbr">2</span>
           <span class="count-text">Algo</span>
         </div>
 
         <!-- Item 2 -->
-        <div
-          class="col-md-3 mb-sm-100 count-item wow fadeIn"
-          data-wow-duration="1s"
-        >
+        <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
           <span id="count-2" class="count-nbr">2</span>
           <span class="count-text">Symbol's</span>
         </div>
 
         <!-- Item 3 -->
-        <div
-          class="col-md-3 mb-sm-100 count-item wow fadeIn"
-          data-wow-duration="1s"
-        >
+        <div class="col-md-3 mb-sm-100 count-item wow fadeIn" data-wow-duration="1s">
           <span id="count-3" class="count-nbr">1:8</span>
           <span class="count-text">Risk Reward</span>
         </div>
 
         <!-- Item 4 -->
-        <div
-          class="col-md-3 count-item wow fadeIn"
-          data-wow-duration="1s"
-          data-wow-delay=".3s"
-        >
+        <div class="col-md-3 count-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
           <span id="count-4" class="count-nbr">50</span>
           <span class="count-text">Participants</span>
         </div>
-      </div>
-      <!-- / .row -->
-    </div>
-    <!-- / .container -->
-  </div>
+
+      </div><!-- / .row -->
+    </div><!-- / .container -->
+  </div><!-- / .number-counters -->
   <!-- / .number-counters -->
 
   <!-- ========== Pricing Tables - 3col ========== -->
 
+  
   <div id="pricing" class="gray-bg">
-    <section class="container section pricing-tables dark-index-padding">
+    <section class="container section pricing-tables">
+      
       <header class="sec-heading">
-        <h2 class="dark-index">Dark Index</h2>
-        <!-- <span class="subheading">Low prices lots of value </span> -->
+        <h2>Our Prices</h2>
+        <span class="subheading">Low prices lots of value </span>
       </header>
 
       <div class="row">
+        
         <!-- Table 1 -->
+        <div class="col-md-4">
+          <div class="p-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+
+            <!-- Heading -->
+            <h4>Starter</h4>
+            <div class="price">
+              <span class="currency">₹</span>
+              <span class="value">11</span>
+              <span class="type">\mo</span>
+            </div>
+            <p class="desc">BankNifty Monthly / Weekly Options</p>
+            <hr>
+
+            <!-- Items -->
+            <ul class="p-items">
+              <li><b>Valid for 20 Trading Days</b></li>
+              <li><b>#DarkIndex</b></li>
+              <!-- <li><b>Full</b> Access</li>
+              <li><b>1 Year</b> Licence</li>
+              <li><b>Free</b> Support</li> -->
+            </ul>
+             <hr>
+
+            <button (click)="checkoutModal.open()" class="btn-ghost">Sign up now</button>
+          </div><!-- / .p-table -->
+        </div><!-- / .col-md-4 -->
+        
 
         <!-- Table 2 (featured) -->
-        <div class="d-flex justify-content-center">
+        <div class="col-md-4">
           <div class="p-table pt-featured wow fadeInUp" data-wow-duration="1s">
+
             <!-- Star -->
             <div class="banner">
               <span class="star"><i class="fa fa-star"></i></span>
             </div>
-
+            
             <!-- Header -->
-            <h4>Prime Membership</h4>
+            <h4>Professional</h4>
             <div class="price">
               <span class="currency">₹</span>
-              <span class="value">14,999</span>
-              <span class="type"></span>
+              <span class="value">51</span>
+              <span class="type">\mo</span>
             </div>
             <p class="desc">BankNifty Monthly / Weekly Options</p>
-            <hr />
+            <hr>
 
             <!-- Items -->
             <ul class="p-items">
-              <li>
-                <b> Valid for 20 Trading Days </b>
-              </li>
+              <li><b>Valid for 20 Trading Days</b></li>
               <li><b>#DarkIndex</b></li>
               <!-- <li><b>Full</b> Access</li>
-                  <li><b>2 Year</b> Licence</li>
-                  <li><b>Free</b> Support</li> -->
+              <li><b>2 Year</b> Licence</li>
+              <li><b>Free</b> Support</li> -->
             </ul>
-            <hr />
+             <hr>
 
-            <button (click)="checkoutModal.open()" class="btn-ghost">
-              Book Ticket
-            </button>
-          </div>
-          <!-- / .p-table -->
-        </div>
-        <!-- / .col-md-4 -->
+            <button (click)="checkoutModal.open()" class="btn-ghost">Sign up now</button>
+          </div><!-- / .p-table -->
+        </div><!-- / .col-md-4 -->
+
 
         <!-- Table 3 -->
-      </div>
-      <!-- / .row -->
-    </section>
+        <div class="col-md-4">
+          <div class="p-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+
+            <!-- Header -->
+            <h4>Ultimate</h4>
+            <div class="price">
+              <span class="currency">₹</span>
+              <span class="value">71</span>
+              <span class="type">\mo</span>
+            </div>
+            <p class="desc">BankNifty Monthly / Weekly Options</p>
+            <hr>
+
+            <!-- Items -->
+            <ul class="p-items">
+              <li><b>Valid for 20 Trading Days</b></li>
+              <li><b>#DarkIndex</b></li>
+              <!-- <li><b>Full</b> Access</li>
+              <li><b>4 Year</b> Licence</li>
+              <li><b>Free</b> Support</li> -->
+            </ul>
+             <hr>
+
+            <button (click)="checkoutModal.open()" class="btn-ghost">Sign up now</button>
+          </div><!-- / .p-table -->
+        </div><!-- / .col-md-4 -->
+
+      </div><!-- / .row -->
+    </section><!-- / .container -->
     <!-- / .container -->
-    <div class="row">
-      <header class="sec-heading inclusion">
-        <h2>Inclusion</h2>
-        <span class="subheading">
-          <p class="paragraph">
-            Link Shared on GotoMeeting - 9:10 AM / 3:30 PM on Broadcast Group -
-            Whatsapp / Telegram <br />
+  <div class="row">
+    <header class="sec-heading inclusion">
+      <h2>Inclusion</h2>
+      <span class="subheading">
+        <p class="paragraph">
+          Link Shared on GotoMeeting - 9:10 AM / 3:30 PM on Broadcast Group -
+          Whatsapp / Telegram <br />
 
-            #DarkIndex #Intraday #Positional Module - Trading Symbol
-            #BankNiftyFut #Monthly #Weekly #Options <br />
+          #DarkIndex #Intraday #Positional Module - Trading Symbol
+          #BankNiftyFut #Monthly #Weekly #Options <br />
 
-            One can trade minimum one lot & there is no limit on upside <br />
+          One can trade minimum one lot & there is no limit on upside <br />
 
-            Before you sign-up, pls read the FAQ's. <br />
+          Before you sign-up, pls read the FAQ's. <br />
 
-            We have a ZERO Refund Policy
-          </p>
-        </span>
-      </header>
-    </div>
+          We have a ZERO Refund Policy
+        </p>
+      </span>
+    </header>
   </div>
-  <!-- / .gray-bg -->
+  </div><!-- / .gray-bg -->
 
   <!-- ========== CTA - Contact Link ========== -->
 
-  <div class="cta-link">
+  <div id="vision" class="cta-link">
     <div class="bg-overlay">
       <div class="cta-wrapper">
         <h3
@@ -261,7 +299,7 @@
 
   <!-- ========== Featured Projects ========== -->
   <!-- ========== Branding Identity ========== -->
-
+<section id="who-we-are" >
   <div id="portfolio" class="container-fluid ft-hover-item">
     <div class="row">
       <!-- Item 1 -->
@@ -305,7 +343,7 @@
     <!-- / .row -->
   </div>
   <!-- / .container-fluid -->
-
+</section>
   <!-- ========== Webinar ========== -->
 
   <div class="cta-link">
@@ -370,19 +408,12 @@
       </div>
 
       <div class="container">
-        <div class="row btn-example btn-webinar">
-          <div class="col-md-4 mb-sm-30 webinar-btn-1">
-            <button class="btn-ghost-light btn-large">Buy Webinar</button>
-          </div>
-          <div class="col-md-4 mb-sm-30 webinar-btn-2">
-            <button class="btn-ghost-light btn-large">Downloads</button>
-            <small>
-              <br />
-              For Pricing & FAQ's - Refer to Downloads
-            </small>
+        <div class="row">
+          <div class="text-center d-inline-block">
+            <button style=" border: #27afe3; background-image: linear-gradient(to right, #015e9b, #27afe3);" class="btn-ghost mb-sm-30 btn">Buy Webinar</button>
+            <button style=" border: #27afe3; background-image: linear-gradient(to right, #015e9b, #27afe3);"  class="btn-ghost mb-sm-30 btn">Downloads</button>
           </div>
         </div>
-      </div>
     </div>
   </div>
   <!-- / .dark-bg .cta-link -->
@@ -408,7 +439,7 @@
         data-wow-delay=".1s"
         data-wow-duration="1s"
       >
-        Show your story with Definity
+        <!-- text to hover on the video preview -->
       </h3>
       <a
         href="https://www.youtube.com/watch?v=k5C1Bt4k-iA"
@@ -426,258 +457,141 @@
 
   <!-- ========== CTA - Newsletter Signup ========== -->
 
-  <div class="cta-newsletter">
-    <div class="bg-overlay">
-      <div class="cta-wrapper">
-        <h3
-          class="cta-lead h-alt wow fadeIn"
-          data-wow-delay=".1s"
-          data-wow-duration="1s"
-        >
-          Join our newsletter
-        </h3>
-
-        <form class="mc-ajax mc-form subscribe-form" _lpchecked="1">
-          <!-- Email -->
-          <input
-            type="email"
-            name="EMAIL"
-            placeholder="Your email address"
-            id="mc-email"
-            class="wow fadeInUp"
-            data-wow-delay=".1s"
-            data-wow-duration="1s"
-          />
-
-          <!-- Send Button -->
-          <input
-            type="submit"
-            name="subscribe"
-            value="Join Us"
-            class="btn btn-light btn-large wow fadeInUp mc-send-btn"
-            data-wow-delay=".1s"
-            data-wow-duration="1s"
-          />
-
-          <!-- Info (uncomment this for extra info) -->
-          <!-- <label for="mc-email" class="mc-info"></label> -->
-
-          <!-- Ajax message -->
-          <div class="subscribe-result"></div>
-        </form>
-      </div>
-      <!-- / .cta-wrapper -->
+  <section  class="success-stories">
+    <h2 class="font_2" style="line-height:1.1em;text-align:center;font-size:38px;margin: 5rem 0px;">
+      <span class="color_15">
+        <span  >SUCCESS STORIES</span>
+      </span>
+    </h2>
+    <div class="success-1">
+      <p class="font_5" style="line-height:1.2em;text-align:center;font-size:30px;margin: 2rem auto;">
+        <span class="color_15">
+          <span style="font-style:italic;">"LTR - Simple to execute, quantitative and profitable trading setups"</span>
+        </span>
+      </p>
+      <p class="font_7" style="text-align:center;font-size:18px">
+        <span class="color_15">
+          <span style="letter-spacing:0.05em">Rahul Malhotra</span>
+      </span>
+      </p>
+      <p class="font_8" style="line-height:1.5em;text-align:center;font-size:14px;">
+        <span class="color_15">January 10, 2019</span>
+      </p>
     </div>
-    <!-- / .bg-overlay -->
-  </div>
-  <!-- / .cta-newsletter -->
+    <div class="success-2">
+      <p class="font_5" style="line-height:1.2em;text-align:center;font-size:30px;margin: 2rem auto;">
+        <span class="color_15">
+          <span style="font-style:italic">"Nothing to say more about LTR, experience yourself the amazing journey u would discover"</span>
+        </span>
+      </p>
+      <p class="font_7" style="text-align:center;font-size:18px">
+        <span class="color_15">
+          <span style="letter-spacing:0.05em">Sushil Tandon</span>
+        </span>
+      </p>
+      <p class="font_8" style="line-height:1.5em;text-align:center;font-size:14px">
+        <span class="color_15">February 10, 2019</span>
+      </p>
+    </div>
+    <div class="success-3">
+      <p class="font_5" style="line-height:1.2em;text-align:center;font-size:30px;margin: 2rem auto;">
+        <span class="color_15">
+          <span style="font-style:italic">"I have thoroughly found LTR program to be helpful in generating consistent returns"</span>
+        </span>
+      </p>
+      <p class="font_7" style="text-align:center;font-size:18px">
+        <span class="color_15">
+          <span style="letter-spacing:0.05em">Chander Channa</span>
+        </span>
+      </p>
+      <p class="font_8" style="line-height:1.5em;text-align:center;font-size:14px">
+        <span class="color_15">March 12, 2019</span>
+      </p>
+    </div>
+    <div class="success-4">
+      <p class="font_5" style="line-height:1.2em;text-align:center;font-size:30px;margin: 2rem auto;">
+        <span class="color_15">
+          <span style="font-style:italic">"I Cant Belive My Eyes &amp; Ears. LTR is a money spinner"</span>
+        </span>
+      </p>
+      <p class="font_7" style="text-align:center;font-size:18px">
+        <span class="color_15">
+          <span style="letter-spacing:0.05em">Rahul Mehta</span>
+        </span>
+      </p>
+      <p class="font_8" style="line-height:1.5em;text-align:center;font-size:14px">
+        <span class="color_15">July&nbsp;1, 2019</span>
+      </p>
+    </div>
+  </section>
 
   <!-- ========== Shop Layout - (Top Rated Product) ========== -->
 
   <!-- ========== Contact ========== -->
 
-  <!-- ========== Footer ========== -->
+  <section id="contact" class="section contact-1">
+          
+    <header class="sec-heading">
+      <h2>Countact Us</h2>
+      <span class="subheading">We love to hear from you</span>
+    </header>
+    
+    <div class="contact-wrapper">
+      <!-- Map -->
+      
 
-  <footer class="footer-widgets">
-    <div class="container">
-      <div class="row section">
-        <!-- About Us -->
-        <div class="col-md-3 col-sm-6 mb-sm-100">
-          <div class="widget about-widget">
-            <h5 class="header-widget">About Us</h5>
-            <p>
-              Lorem ipsum dolor sit amet, eiusmod consectetur adipisicing elit,
-              sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis.
-            </p>
+      <!-- Show Info Button -->
+      
 
-            <ul class="social-links">
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
-              </li>
-            </ul>
-          </div>
-          <!-- / .widget -->
-        </div>
-        <!-- / .col-md-3 -->
+      <div class="container">
 
-        <!-- Instagram Feed -->
-        <div class="col-md-3 col-sm-6 mb-sm-100">
-          <div class="widget gallery-widget">
-            <h5 class="header-widget">Instagram Feed</h5>
-            <ul>
-              <li>
-                <a
-                  href="http://placehold.it/650x450"
-                  class="gallery-widget-lightbox"
-                  ><img
-                    src="http://placehold.it/87x87/999/eee"
-                    alt="Instagram Image" />
-                  <div class="hover-link">
-                    <span class="linea-arrows-plus"></span></div
-                ></a>
-              </li>
+        
+        <!-- Contact Form -->
+        <div class="row">
+          <form action="assets/contact-form/contact-form.php" method="POST" id="contact-form-1" class="form-ajax">
+            <div class="col-md-offset-2 col-md-4 wow fadeInUp" data-wow-duration="1s">
 
-              <li>
-                <a
-                  href="http://placehold.it/650x450"
-                  class="gallery-widget-lightbox"
-                  ><img src="http://placehold.it/87x87" alt="Instagram Image" />
-                  <div class="hover-link">
-                    <span class="linea-arrows-plus"></span></div
-                ></a>
-              </li>
-
-              <li>
-                <a
-                  href="http://placehold.it/650x450"
-                  class="gallery-widget-lightbox"
-                  ><img
-                    src="http://placehold.it/87x87/999/eee"
-                    alt="Instagram Image" />
-                  <div class="hover-link">
-                    <span class="linea-arrows-plus"></span></div
-                ></a>
-              </li>
-
-              <li>
-                <a
-                  href="http://placehold.it/650x450"
-                  class="gallery-widget-lightbox"
-                  ><img src="http://placehold.it/87x87" alt="Instagram Image" />
-                  <div class="hover-link">
-                    <span class="linea-arrows-plus"></span></div
-                ></a>
-              </li>
-
-              <li>
-                <a
-                  href="http://placehold.it/650x450"
-                  class="gallery-widget-lightbox"
-                  ><img
-                    src="http://placehold.it/87x87/999/eee"
-                    alt="Instagram Image" />
-                  <div class="hover-link">
-                    <span class="linea-arrows-plus"></span></div
-                ></a>
-              </li>
-
-              <li>
-                <a
-                  href="http://placehold.it/650x450"
-                  class="gallery-widget-lightbox"
-                  ><img src="http://placehold.it/87x87" alt="Instagram Image" />
-                  <div class="hover-link">
-                    <span class="linea-arrows-plus"></span></div
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <!-- / .widget -->
-        </div>
-        <!-- / .col-md-3 -->
-
-        <!-- Twitter Feed -->
-        <div class="col-md-3 col-sm-6 mb-sm-100">
-          <div class="widget twitter-widget">
-            <h5 class="header-widget">Twitter Feed</h5>
-            <ul>
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <p>
-                  5 Reasons You Should Take a Sabbatical from Creative Work
-                  <a href="#">http://enva.to/NTa6F</a> by
-                  <a href="#">@envato</a> <span>- AUG 10</span>
-                </p>
-              </li>
-
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <p>
-                  What is the enemy of <a href="#">#creativity</a>?
-                  <a href="#">http://enva.to/hVl5G</a> [VIDEO] <br />by
-                  <a href="#">@envato</a> <span>- AUG 5</span>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <!-- / .widget -->
-        </div>
-        <!-- / .col-md-3 -->
-
-        <!-- Newsletter -->
-        <div class="col-md-3 col-sm-6">
-          <div class="widget newsletter-widget">
-            <h5 class="header-widget">Newsletter</h5>
-
-            <form class="mc-form subscribe-form" _lpchecked="1">
+              <!-- Name -->
               <div class="form-group">
-                <!-- Email -->
-                <input
-                  type="email"
-                  name="EMAIL"
-                  placeholder="Join our newsletter"
-                />
-
-                <!-- Send Button -->
-                <button type="submit" name="subscribe" class="mc-send-btn">
-                  <i class="fa fa-send-o"></i>
-                </button>
+                <input type="text" name="name" id="name-contact-1" class="form-control validate-locally" placeholder="Enter your name">
+                <label for="name-contact-1">Name</label>
+                <span class="pull-right alert-error"></span>
               </div>
 
-              <!-- Ajax message -->
-              <div class="subscribe-result"></div>
-            </form>
-          </div>
-          <!-- / .widget -->
-        </div>
-        <!-- / .col-md-3 -->
-      </div>
-      <!-- / .row -->
-    </div>
-    <!-- / .container -->
+              <!-- Email -->
+              <div class="form-group">
+                <input type="email" name="email" id="email-contact-1" class="form-control validate-locally" placeholder="Enter your email">
+                <label for="email-contact-1">Email</label>
+                <span class="pull-right alert-error"></span>
+              </div>
 
-    <!-- Copyright -->
-    <div class="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <small
-              >&copy; 2015 Definity. Made by
-              <a
-                class="no-style-link"
-                href="http://themeforest.net/user/octarinethemes"
-                target="_blank"
-                >OctarineThemes</a
-              ></small
-            >
-          </div>
+            </div>
 
-          <div class="col-sm-6">
-            <small
-              ><a href="#page-top" class="pull-right to-the-top"
-                >To the top<i class="fa fa-angle-up"></i></a
-            ></small>
-          </div>
-        </div>
-        <!-- / .row -->
-      </div>
-      <!-- / .container -->
-    </div>
-    <!-- / .copyright -->
-  </footer>
+            <div class="col-md-4 wow fadeInUp" data-wow-duration="1s">
+
+              <!-- Message -->
+              <div class="form-group">
+                <textarea name="message" id="message-contact-1" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                <label for="message-contact-1">Message</label>
+              </div>
+              <div>
+                <input type="submit" class="btn pull-right" value="Send Message">
+              </div>
+
+              <!-- Ajax Message -->
+              <div class="ajax-message col-md-12 no-gap"></div>
+
+            </div><!-- / .col-md-4 -->
+
+          </form>
+        </div><!-- / .row -->
+      </div><!-- / .container -->
+    </div><!-- / .contact-wrapper -->
+  </section><!-- / .contact-1 -->
+
+  <!-- ========== Footer ========== -->
+
+  
   <!-- / .footer-widgets -->
 
   <!-- ========== Scripts ========== -->

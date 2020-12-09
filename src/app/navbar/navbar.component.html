@@ -17,10 +17,11 @@
       <span class="icon-bar"></span>
     </button>
     <!-- Logo -->
-    <a class="navbar-brand" href="index.html"
+    <a  style="padding: 0;" class="navbar-brand" href="index.html"
       ><img
+        style="padding: 0;"
         class="navbar-logo-dark"
-        src="assets/images/logo-PNG-2.png"
+        src="assets/images/logo.png"
         alt="Resized-Logo"
     /></a>
   </div>
@@ -31,30 +32,38 @@
       <li>
         <a href="#home">Home<span class="sr-only"></span></a>
       </li>
-      <li>
+      <!-- <li>
         <a href="#welcome"
           >The Live Trading Room<span class="sr-only"></span
         ></a>
-      </li>
+      </li> -->
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">about us <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#welcome">what do we do</a></li>
+          <li><a href="#vision">vision</a></li>
+          <li><a href="#who-we-are">who we are</a></li>
+          
+        </ul>
+      </li><!-- / Blog -->
+
+
+
+
+
+
+
       <li>
         <a href="#portfolio">Knowledge Series<span class="sr-only"></span></a>
       </li>
       <li>
         <a href="#contact">Contact Us<span class="sr-only"></span></a>
       </li>
-      <li 
-      style="cursor: pointer"
-      >
-        <a [routerLink]="'/profile'" >
-        Profile
-        <span 
-        class="sr-only">
-      </span>
-    </a>
-  </li>
-      <li 
-      style="cursor: pointer;"
-      *ngIf="isLoggedIn">
+      <li>
+        <a routerLink="/profile" href="#profile">profile<span class="sr-only"></span></a>
+      </li>
+      <li class="login-btn" *ngIf="isLoggedIn">
         <a (click)="logout()">
           <span
             ><i
@@ -67,9 +76,7 @@
           <span class="sr-only"> </span
         ></a>
       </li>
-      <li
-      style="cursor: pointer;"
-      *ngIf="!isLoggedIn">
+      <li class="login-btn" *ngIf="!isLoggedIn">
         <a (click)="navigate()">
           <span
             ><i
