@@ -48,7 +48,7 @@ export class AuthService {
     this.token = null;
     localStorage.removeItem('id_token');
     localStorage.removeItem('expires_at');
-    this.router.navigate(['/pages/login']);
+    // this.router.navigate(['/pages/login']);
   }
 
   get getToken(): string {

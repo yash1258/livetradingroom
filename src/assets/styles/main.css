@@ -196,18 +196,6 @@ _____________________________________________________
 	0.2 Utility
 -------------------------------------------------- */
 
-/* HTML/BODY */
-
-html,body
-{
-    width: 100%;
-    
-    margin: 0px;
-    padding: 0px;
-    overflow: scroll; 
-}
-
-
 hr {
   margin-top: 0;
   margin-bottom: 0;
@@ -1485,8 +1473,10 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
   position: relative;
   display: inline-block;
   padding: 8px 38px;
+
   /* background: #111; */
   background-image: linear-gradient(to right, #015e9b, #27afe3);
+
   color: #ececec;
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
@@ -1499,18 +1489,26 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 }
 
 .btn:visited, .btn-ghost:visited, .btn-ghost-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited, .btn-text:visited, .btn-text-light:visited, .btn-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
+
   
   background: #27afe3;
+
 }
 
 .btn:visited:hover, .btn-ghost:visited:hover, .btn-ghost-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited:hover, .btn-text:visited:hover, .btn-text-light:visited:hover, .btn-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited:hover {
   color: #ececec;
+
   background: #27afe3;
+=======
+
 }
 
 .btn:hover, .btn-ghost:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover, .btn-text:hover, .btn-text-light:hover, .btn-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:hover {
   color: #ececec;
+
   background: #27afe3;
+=======
+
 }
 
 .btn:focus, .btn-ghost:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus, .btn-text:focus, .btn-text-light:focus, .btn-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:focus {
@@ -1530,7 +1528,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost:after, .btn-ghost-light:after, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:after {
   content: '';
   position: absolute;
-  background: #27afe3;
+  background: #111;
   left: 0;
   top: 100%;
   width: 100%;
@@ -1544,17 +1542,23 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost-light:visited,
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited,
 .btn-ghost:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus {
+
   color: #27afe3;
+
   text-decoration: none;
 }
 
 .btn-ghost:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover {
+
   color: #fff;
+
   background: none;
 }
 
 .btn-ghost:hover:visited, .btn-ghost-light:hover:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover:visited {
+
   color: #fff;
+
   text-decoration: none;
 }
 
@@ -2253,7 +2257,9 @@ fieldset[disabled] .form-control:hover {
   margin: 0;
 }
 
+
 /* .footer-widgets .gallery-widget ul li {
+
   display: inline-block;
   margin-right: 1px;
   margin-bottom: 1px;
@@ -3079,8 +3085,10 @@ fieldset[disabled] .form-control:hover {
 }
 
 .navbar-trans .navbar-logo-dark {
+
   content: url(../images/logo-3.png);
   
+
 }
 
 .navbar-trans:not(.navbar-inverse) .navbar-nav li a:focus,
@@ -4297,8 +4305,10 @@ fieldset[disabled] .form-control:hover {
 /* ---- 10.2 Counters - Numbers ---- */
 .number-counters, .number-counters-dark-bg {
   position: relative;
+
   /* background: #ccc url(http://placehold.it/2102x1578); */
   background-color: #a5a3a8;
+
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -6370,8 +6380,10 @@ fieldset[disabled] .form-control:hover {
 -------------------------------------------------- */
 /* ---- 17.1 CTA - Link ---- */
 .cta-link {
+
   /* background: url(../../assets/images/test/gray-background.png) ; */
   
+
 }
 
 .cta-link .bg-overlay {
@@ -6407,7 +6419,9 @@ fieldset[disabled] .form-control:hover {
 }
 
 .cta-1{
+
   background: url(../images/test/dark-low-poly-background_1048-7971.jpg)
+
 }
 
 .cta-link .cta-wrapper h3, .cta-link .cta-wrapper .page-title .subheading, .page-title .cta-link .cta-wrapper .subheading {
@@ -6419,7 +6433,9 @@ fieldset[disabled] .form-control:hover {
 
 /* ---- 17.2 CTA - Newsletter Signup ---- */
 .cta-newsletter {
+
   background: url(../../assets/images/shattered.gif) repeat;
+
   background-color:#27afe3;
 
 }
@@ -10343,6 +10359,7 @@ form .input-error-2:focus {
 }
 /*# sourceMappingURL=main.css.map */
 
+
 .font_5{
   font:normal normal normal 30px/1.4em raleway,sans-serif;
 }
@@ -10391,3 +10408,4 @@ button.btn-ghost-light.btn{
 #contact{
   padding-top: 20px;
 }
+

@@ -1,18 +1,34 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <form class="form-inline">
-        <p for="price Input">Please Enter the Number of Days</p>
-        <input
-          type="number"
-          class="form-control mb-2 mr-sm-2"
-          id="price Input"
-          placeholder="20"
-        />
+      <form #checkoutForm="ngForm" class="form-inline">
+        <div class="form-group">
+          <input
+            name="tickets"
+            type="number"
+            class="form-control"
+            placeholder="No of Days (20)"
+            [(ngModel)]="tickets"
+            (ngModelChange)="updatePrice()"
+            #ticketsModel="ngModel"
+          />
+        </div>
+        <div>
+          <label class="p-2">{{ price }}&nbsp;INR</label>
+        </div>
+        <div>
+          <p *ngIf="tickets > 20" class="text-danger">
+            Please Enter a Number below 20
+          </p>
+          <label>Please Enter the amount of tickets</label>
+        </div>
+        <div>
+          <button (click)="createRazorpayOrder()" class="btn btn-ghost">
+            Confirm
+          </button>
+          <h3 class="text-danger">{{ serverResponse }}</h3>
+        </div>
       </form>
-      <button (click)="createRazorpayOrder()" class="btn btn-ghost">
-        Confirm Payment
-      </button>
     </div>
   </div>
 </div>

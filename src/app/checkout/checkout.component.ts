@@ -10,6 +10,9 @@ import { WindowRefService } from '../services/window-ref.service';
   styleUrls: ['./checkout.component.css'],
 })
 export class CheckoutComponent implements OnInit {
+  tickets = 1;
+  price = 74.95;
+  serverResponse: string;
   constructor(
     private paymentService: PaymentService,
     private winRef: WindowRefService
@@ -17,9 +20,15 @@ export class CheckoutComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  updatePrice(): void {
+    console.log(this.price);
+    console.log(this.tickets);
+    this.price = Math.floor(this.tickets * 74.95);
+  }
+
   createRazorpayOrder(): void {
     const order = {
-      amount: 14999 * 100,
+      amount: this.price * 100,
       currency: 'INR',
     };
     this.paymentService.createOrder(order).subscribe(
@@ -29,14 +38,19 @@ export class CheckoutComponent implements OnInit {
       },
       (err) => {
         console.log(err);
+        this.serverResponse = err.error;
+        setTimeout(() => {
+          location.assign('/');
+        }, 1500);
       }
     );
   }
 
   payWithRazor(res, order): void {
+    console.log(res);
     const options: any = {
       key: environment.razorpay_key,
-      amount: 1500000,
+      amount: res.amount,
       currency: 'INR',
       name: 'live Trading Room',
       order_id: res.id,
@@ -46,6 +60,7 @@ export class CheckoutComponent implements OnInit {
     };
     options.handler = (response, error) => {
       options.response = response;
+      response.subscription = this.tickets;
       const params = new HttpParams({ fromObject: response });
       this.paymentService.verifyOrder(params).subscribe(
         (res) => {
