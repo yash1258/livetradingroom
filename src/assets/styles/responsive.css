@@ -184,6 +184,11 @@
 }
 
 @media (max-width: 600px) {
+
+  .about-widget{
+    margin-top: 50px;
+  }
+
   .footer-widgets .gallery-widget ul {
     height: 174px;
   }
@@ -202,6 +207,7 @@
     margin-right: 0;
     margin-bottom: 15px;
     width: 33%;
+    
   }
   .footer-social-links ul li:nth-child(2) {
     border-right: none;
@@ -360,11 +366,29 @@
 
 @media (max-width: 600px) {
   .cta-link .cta-wrapper h3 {
-    letter-spacing: 3px;
+    letter-spacing: 0px;
   }
   .cta-newsletter .cta-wrapper input[type="email"] {
     font-size: 1.7em;
   }
+  .sec-heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.ws-m {
+   padding-bottom: 0px; 
+}
+.btn {
+  padding: 8px 15px;
+  font-size: 10px;
+  width: fit-content;
+}
+
+.success-1,.success-2,.success-3,.success-4 {
+  margin: 3rem auto;
+  width: 100%;
+}
+
 }
 
 /* ---- Counters ---- */
@@ -835,7 +859,7 @@
   .fs-video-hero .hero-content-wrapper .hero-content,
   .fw-video-hero .hero-content-wrapper .hero-content,
   .freelancer-hero .hero-content-wrapper .hero-content {
-    padding-left: 35px;
+    padding-left: 15px;
     padding-right: 35px;
   }
   .main-demo-hero .hero-content-wrapper .hero-content .hero-lead,
