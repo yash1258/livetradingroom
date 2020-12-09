@@ -21,9 +21,11 @@
     "@angular/platform-browser-dynamic": "~10.1.4",
     "@angular/router": "~10.1.4",
     "angular-custom-modal": "^1.2.0",
+    "angular-particle": "^1.0.4",
     "animate.css": "^3.7.2",
     "date-fns": "^2.16.1",
     "ng-validate-equal": "^1.0.4",
+    "particles.js": "^2.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
