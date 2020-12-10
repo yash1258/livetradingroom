@@ -11,8 +11,12 @@ import { ValidateEqualModule } from 'ng-validate-equal';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { httpInterceptor } from './interceptors/httpinterceptor.interceptor';
 import { ModalModule } from 'angular-custom-modal';
+
+import { ParticlesModule } from 'angular-particle';
+
 import { ParticlesDirective } from './shared/directive/particle.directive';
 import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +35,7 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     ModalModule,
     ValidateEqualModule,
+    ParticlesModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: httpInterceptor, multi: true },
