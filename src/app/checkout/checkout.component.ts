@@ -12,7 +12,8 @@ import { WindowRefService } from '../services/window-ref.service';
 export class CheckoutComponent implements OnInit {
   tickets = 1;
   price = 74.95;
-  serverResponse: string;
+  serverSuccessResponse: string;
+  serverErrorResponse: string;
   constructor(
     private paymentService: PaymentService,
     private winRef: WindowRefService
@@ -38,10 +39,10 @@ export class CheckoutComponent implements OnInit {
       },
       (err) => {
         console.log(err);
-        this.serverResponse = err.error;
-        setTimeout(() => {
-          location.assign('/');
-        }, 1500);
+        this.serverErrorResponse = err.error;
+        // setTimeout(() => {
+        //   location.assign('/');
+        // }, 1500);
       }
     );
   }
@@ -64,10 +65,16 @@ export class CheckoutComponent implements OnInit {
       const params = new HttpParams({ fromObject: response });
       this.paymentService.verifyOrder(params).subscribe(
         (res) => {
-          console.log(res);
+          this.serverSuccessResponse = res['message'];
+          setTimeout(() => {
+            location.assign('/');
+          }, 1500);
         },
         (err) => {
-          console.log(err);
+          this.serverErrorResponse = err.err.message;
+          setTimeout(() => {
+            location.assign('/');
+          }, 1500);
         }
       );
     };

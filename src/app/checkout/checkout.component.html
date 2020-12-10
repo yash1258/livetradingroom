@@ -1,12 +1,17 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <form #checkoutForm="ngForm" class="form-inline">
+      <form
+        #checkoutForm="ngForm"
+        (ngSubmit)="createRazorpayOrder()"
+        class="form-inline"
+      >
         <div class="form-group">
           <input
             name="tickets"
             type="number"
             class="form-control"
+            pattern="^[1-9][0-9]{0,4}"
             placeholder="No of Days (20)"
             [(ngModel)]="tickets"
             (ngModelChange)="updatePrice()"
@@ -17,16 +22,18 @@
           <label class="p-2">{{ price }}&nbsp;INR</label>
         </div>
         <div>
+          <p *ngIf="!checkoutForm.valid" class="text-danger">
+            minimum order value is 1
+          </p>
           <p *ngIf="tickets > 20" class="text-danger">
             Please Enter a Number below 20
           </p>
           <label>Please Enter the amount of tickets</label>
         </div>
         <div>
-          <button (click)="createRazorpayOrder()" class="btn btn-ghost">
-            Confirm
-          </button>
-          <h3 class="text-danger">{{ serverResponse }}</h3>
+          <button type="submit" class="btn btn-ghost">Confirm</button>
+          <h3 class="text-danger">{{ serverErrorResponse }}</h3>
+          <h3 class="text-success">{{ serverSuccessResponse }}</h3>
         </div>
       </form>
     </div>
