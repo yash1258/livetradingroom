@@ -16,6 +16,7 @@ import { ParticlesModule } from 'angular-particle';
 
 import { ParticlesDirective } from './shared/directive/particle.directive';
 import { FooterComponent } from './footer/footer.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
     CheckoutComponent,
     ParticlesDirective,
     FooterComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

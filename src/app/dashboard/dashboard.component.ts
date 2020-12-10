@@ -80,7 +80,7 @@ export class DashboardComponent implements OnInit {
         },
         "move": {
           "enable": true,
-          "speed": 4,
+          "speed": 7,
           "direction": "none",
           "random": false,
           "straight": false,
@@ -136,11 +136,7 @@ export class DashboardComponent implements OnInit {
     };
 
 
-  constructor() {
-    return;
-  }
-  ngOnInit(): void {
-    return;
-  }
+  
+  
 
 }
