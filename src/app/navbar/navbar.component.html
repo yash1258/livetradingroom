@@ -27,10 +27,12 @@
   </div>
 
   <!-- Navbar Links -->
-  <div id="navbar" class="navbar-collapse collapse page-scroll navbar-right">
-    <ul class="nav navbar-nav">
+  <div  id="navbar" class="navbar-collapse collapse page-scroll navbar-right">
+    <ul class="nav navbar-nav" 
+    
+    >
       <li>
-        <a href="#home">Home<span class="sr-only"></span></a>
+        <a style="color: #000;" href="#home">Home<span class="sr-only"></span></a>
       </li>
       <!-- <li>
         <a href="#welcome"
@@ -39,11 +41,11 @@
       </li> -->
 
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">about us <span class="caret"></span></a>
+        <a style="color: #000;" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">about us <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#welcome">what do we do</a></li>
-          <li><a href="#vision">vision</a></li>
-          <li><a href="#who-we-are">who we are</a></li>
+          <li><a style="color: #000;" href="#welcome">what do we do</a></li>
+          <li><a style="color: #000;" href="#vision">vision</a></li>
+          <li><a style="color: #000;" href="#who-we-are">who we are</a></li>
           
         </ul>
       </li><!-- / Blog -->
@@ -55,13 +57,13 @@
 
 
       <li>
-        <a href="#portfolio">Knowledge Series<span class="sr-only"></span></a>
+        <a style="color: #000;" href="#portfolio">Knowledge Series<span class="sr-only"></span></a>
       </li>
       <li>
-        <a href="#contact">Contact Us<span class="sr-only"></span></a>
+        <a style="color: #000;" href="#contact">Contact Us<span class="sr-only"></span></a>
       </li>
       <li>
-        <a routerLink="/profile" href="#profile">profile<span class="sr-only"></span></a>
+        <a style="color: #000;" routerLink="/profile" href="#profile">profile<span class="sr-only"></span></a>
       </li>
       <li class="login-btn" *ngIf="isLoggedIn">
         <a (click)="logout()">
@@ -85,7 +87,7 @@
               aria-hidden="true"
             ></i
           ></span>
-          Login
+          <span style="color: #000;">Login</span> 
           <span class="sr-only"> </span
         ></a>
       </li>
