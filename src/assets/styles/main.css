@@ -1482,6 +1482,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 -------------------------------------------------- */
 /* ---- 2.1 Defualt Buttons ---- */
 .btn, .btn-ghost, .btn-ghost-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light, .btn-text, .btn-text-light, .btn-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light {
+  
   position: relative;
   display: inline-block;
   padding: 8px 38px;
@@ -4300,7 +4301,7 @@ fieldset[disabled] .form-control:hover {
 .number-counters, .number-counters-dark-bg {
   position: relative;
   /* background: #ccc url(http://placehold.it/2102x1578); */
-  background-color: #a5a3a8;
+  background-color: #015e9b;
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
@@ -4314,7 +4315,7 @@ fieldset[disabled] .form-control:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(17, 17, 17, 0.65);
+  /* background: rgba(17, 17, 17, 0.65); */
   
 }
 
@@ -6378,7 +6379,8 @@ fieldset[disabled] .form-control:hover {
 
 .cta-link .bg-overlay {
   width: 100%;
-  background: url(../images/test/dark-low-poly-background_1048-7971.jpg);
+  background: linear-gradient(to right, #015e9b , #27afe3, #1080f2); 
+  /* background: url(../images/test/dark-low-poly-background_1048-7971.jpg); */
 }
 
 .cta-link .cta-wrapper {
@@ -6409,7 +6411,8 @@ fieldset[disabled] .form-control:hover {
 }
 
 .cta-1{
-  background: url(../images/test/dark-low-poly-background_1048-7971.jpg)
+  background: linear-gradient(to right, #015e9b , #27afe3, #1080f2); 
+  /* background: url(../images/test/dark-low-poly-background_1048-7971.jpg) */
 }
 
 .cta-link .cta-wrapper h3, .cta-link .cta-wrapper .page-title .subheading, .page-title .cta-link .cta-wrapper .subheading {
@@ -6417,11 +6420,12 @@ fieldset[disabled] .form-control:hover {
   margin-bottom: 50px;
   letter-spacing: 1px;
   color: #ececec;
+  
 }
 
 /* ---- 17.2 CTA - Newsletter Signup ---- */
 .cta-newsletter {
-  background: url(../../assets/images/shattered.gif) repeat;
+  /* background: url(../../assets/images/shattered.gif) repeat; */
   background-color:#27afe3;
 
 }
@@ -10358,6 +10362,8 @@ form .input-error-2:focus {
 .success-1,.success-2,.success-3,.success-4 {
   margin: 3rem auto;
   width: 50%;
+  color: #000;
+
   /* background :url(../images/test/gray-background.png); */
 }
 
@@ -10397,4 +10403,23 @@ button.btn-ghost-light.btn{
 
 #contact{
   padding-top: 20px;
+}
+/* h4{
+  color: #1080f2
+} */
+
+.cta-link{
+  background: linear-gradient(to right, #015e9b , #27afe3, #1080f2); 
+}
+
+.price{
+  color: #1080f2;
+}
+
+.success-1 .success-2 .success-3 .success-4{
+  color: #000;
+}
+
+.btn-ghost{
+  color: #1080f2;
 }
